@@ -5,7 +5,7 @@
 It starts with using a live server in Visual Studio Code.
 
 The AngularJS framework is used to build this application as well as the library
-angular-route.js for SPA (One Page Apps).
+angular-route.js for SPA (Single Page Application).
 
 
 
