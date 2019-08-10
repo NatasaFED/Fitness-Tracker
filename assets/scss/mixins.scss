@@ -1,0 +1,12 @@
+@mixin position ($bg1, $pos1, $wid1, $hei1){
+    background: $bg1;
+    position: $pos1;
+    width: $wid1;
+    height: $hei1;
+}
+
+@mixin textStyle($col1, $f_size1, $f_w1) {
+    color: $col1;
+    font-size: $f_size1;
+    font-weight: $f_w1;
+}

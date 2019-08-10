@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness Tracker</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    
+    <div class="template_home">
+        <div class="home_container">
+            <div class="home_welcome">
+                <a href="#!/home">
+                    <h1 class="home_title">Welcome!</h1>
+                    <h4 class="home_subtitile">Overwiew of your activity</h4>
+                </a>
+            </div>
+
+            <div class="home_calendar">
+                <div class="home_date"><a href="#!/monday">10 MON</a></div>
+                <div class="home_date"><a href="#!/tuesday">11 TUE</a></div>
+                <div class="home_date"><a href="#!/wednesday">12 WED</a></div>
+                <div class="home_date"><a href="#!/thursday">13 THU</a></div>
+                <div class="home_date"><a href="#!/friday">14 FRI</a></div>
+            </div>
+
+            <div class="home_chalenge">
+                <ng-view></ng-view>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="angularJs/angular.js"></script>
+    <script src="angularJs/angular-route.js"></script>
+    <script src="app.js"></script>
+
+    <script src="controllers/homeCtrl.js"></script>
+    
+
+
+    
+</body>
+
+</html>

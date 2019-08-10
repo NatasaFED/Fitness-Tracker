@@ -1,0 +1,293 @@
+@import "_reset";
+@import "variables";
+@import "mixins";
+
+
+
+.black{
+    color: $color10;
+}
+
+
+.template_home{
+    font-family: Arial, Helvetica, sans-serif; 
+    margin:  0 auto;
+
+    @include position(linear-gradient($color3, $color2), $position1, 375px, 812px );
+}
+
+
+.home_container{
+    margin: 15px;
+    text-align: center;
+
+    @include position($bg1, $position2, 90%, 95% );
+}
+
+
+.home_welcome{
+    background: $color1;
+    position: absolute;
+    width: 298px;
+    border-radius: 25px;
+    padding: 20px;
+    line-height: $l_height1;
+    text-align: left;
+}
+
+
+.home_title{
+   
+    @include textStyle($color4, 34pt, $f_weight1 );
+}
+
+
+.home_subtitile{
+
+    @include textStyle($color5, 16pt, $f_weight1);
+}
+
+
+.home_calendar{
+    margin-top: 180px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    @include position($bg1, $position2, $width1, 70px );
+
+}
+
+
+.home_date{
+    box-sizing: border-box;
+    background:  $color9;
+    border-radius: 30%;
+    font-size: 16px;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+
+    &:hover{
+        background: $color1; 
+    }
+    
+    &:active{
+        background: $color8;
+        color: $color5;
+    }
+    
+   
+}
+
+a{
+    text-decoration: none;
+    color: $color1;
+}
+
+
+
+.home_date a{
+    color: $color1;
+
+    &:hover{
+         color: $color9;
+}}
+
+
+
+
+
+
+.home_chalenge{
+    margin-top: 270px;
+    color: $color1;
+    fill: #fff;
+
+    @include position($bg1, $position2, $width1, 700px );
+}
+
+
+.home_activity{
+    border-radius: 25px;
+
+    @include position($color7, $position2, $width1, 150px);
+    
+}
+
+
+.home_steps{
+    margin-top: 180px;
+    border-radius: 25px;
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-content: space-around;
+    line-height: $l_height1;
+
+    @include position($color7, $position2, $width1, $height1 );
+   
+}
+
+.steps_number{
+    padding: 15px;
+    font-size: 38px;
+    font-weight: $f_weight1;
+    margin-left: 20px;
+    margin-right: -100px;
+}
+
+.svg_img{
+    background: $color6;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+
+.svg_steps{
+    background: $color6;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.text{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.span_total{
+    color: $color6;
+   
+}
+
+.home_calories{
+    margin-top: 310px;
+    border-radius: 25px;
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-content: space-around;
+    line-height: $l_height1;
+
+    @include position($color7, $position2, $width1, $height1 );
+}
+
+.text_totalB{
+    font-size: 13px;
+    color: $color6;
+   
+}
+
+.details_screen{
+    border-radius: 30px 30px 0 0;
+    line-height: $l_height1;
+    text-align: center;
+    
+    @include position($color1, $position2, $width1, 527px );
+}
+
+
+.details_steps{
+    margin: 20px 70px 20px 70px;
+    text-align: center;
+    box-sizing: border-box;
+
+    @include position($color1, $position2, 200px, 200px);
+    @include textStyle($color10, 32px, $f_weight1 );
+}
+
+.details_circle{
+    width: 200px;
+    height: 200px;
+    background: $color1;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 7px;
+    border-color: $color9 $color7 $color9 $color9;
+    animation: circle1 5s linear infinite;
+}
+
+
+.details_fill{
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    @include position($color1, $position2, calc(200px - 20px), calc(200px - 20px));
+}
+
+.details_comment{
+    box-sizing: border-box;
+    top: 230px;
+    color: $color10;
+
+    @include position($color1, $position2, $width1, $height1);
+}
+
+
+.d_c-top{
+    
+    @include textStyle($color10, 22px, $f_weight2);
+}
+
+.d_c-bottom{
+
+    @include textStyle($color10, 34px, $f_weight1);
+}
+
+
+.details_time{
+    top: 350px;
+
+    @include position($color1, $position2, $width1, 177px);
+}
+
+.details_nav{
+    float: left;
+    width: $width1;
+}
+
+.details_nav ul li{
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 2;
+    text-align: center;
+}
+
+.details_nav ul li:not(:first-child){
+    border-left: 2px solid $color8;
+}
+
+.details_list{
+  
+    @include textStyle($color8, 25px, $f_weight2);
+}
+
+.span_list{
+   
+    @include textStyle($color9, 35px, $f_weight1);
+}
+
+
+
+
+
+@keyframes circle1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
